@@ -1,0 +1,129 @@
+/*index*/
+/*---------------HEADER---------------*/
+.bg_header{
+  border-top:10px solid #2c2c2c;
+  background:#383838;
+}
+.div_input{
+  width:24%;
+  margin:0 auto;
+  height:30px;
+}
+.div_img{
+  padding:8px;
+  background:white;
+  cursor: pointer;
+}
+/*---------------nav-----------------*/
+.bg_nav{
+  border-bottom:10px solid #2c2c2c;
+  background:#383838;
+  padding-left:15%;
+}
+nav ul li a{
+  font-size:15px;
+  color:#ccc;
+  transition:all 1s;
+}
+nav ul li a:hover{
+  transform:scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+  text-shadow: 10px -10px 1px rgba(255,255,255,0.3);
+}
+/*--------------------首页位置---------------------*/
+.feature{
+  border:10px solid #383838;
+  overflow:hidden
+}
+.feature img{
+  transition:all 1s;
+}
+.feature img:hover{
+  transform:scale(1.1);
+}
+/*==============================内容左侧部分==================================*/
+.border_img{
+  border:1px solid #000;
+  padding:4px;
+}
+.text_top{
+  font-size:18px;
+  padding-top:10px;
+}
+.text_top_a{
+  color:#000 !important;
+}
+.text_bottom{
+  background: #dddddd;
+  height:50px;
+  line-height:50px;
+  padding-left:10px;
+  overflow: hidden;
+}
+.text_bottom_btn{
+  display:inline-block;
+  border-radius: 5px;
+  background:#383838;
+  color:#fff;
+  margin-left:150px;
+  font-size:14px;
+  padding-left:5px;
+  padding-right:5px;
+}
+/*-------------------------------内容右侧---------------------------------*/
+.right_top_h2{
+  width:100%;
+  background:#383838;
+  color:#fff;
+  height:50px;
+  line-height:50px;
+  padding-left:10px;
+}
+.right_bottom_img{
+  border:1px solid #383838;
+}
+/*----------------footer------------------*/
+footer{
+  background:#383838;
+  border-top:10px solid #2c2c2c;
+  border-bottom:10px solid #2c2c2c;
+}
+#warp-footer{
+  color:#fff;
+  font-size:14px;
+  margin:10px auto;
+  text-align:center;
+}
+/*login.html*/
+.bg_input{
+  background:transparent;
+}
+
+.bg_img {
+  background: url("../img/featured1") no-repeat;
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------背景--------------------------------*/
+body{
+  background-image:url(../img/pattern.png);
+}

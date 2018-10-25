@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width,initial-scale=1.0">
+	 <link rel="stylesheet" href="css/bootstrap.css">
+	 <link rel="stylesheet" href="css/login.css">
+	 <script src="js/jquery.min.js"></script>
+	 <script src="js/popper.min.js"></script>
+	 <script src="js/bootstrap.min.js"></script>
+  <title>zAvengers-2</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href='img/favicon.ico' rel='icon' type='img/x-icon'/>
+ </head>
+ <body class="bg_img">
+	 <header class="bg_header">
+		 <div class="row">
+			 <div class="col-md-6 col-sm-12 text-center pt-4" >
+				 <div>
+					 <a href="#">
+						 <img src="img/logo.png" alt="">
+					 </a>
+				 </div>
+			 </div>
+		 </div>
+	 </header>
+ <!---------------导航栏--------------->
+	 <nav class="navbar 	navbar-expand-lg navbar-dark bg_nav">
+		 <a href="#" class="navbar-brands text-light h3"></a>
+		 <button class="navbar-toggler" data-toggle="collapse" data-target="#content">
+			 <span class="navbar-toggler-icon border-0"></span>
+		 </button>
+		 <div class="collapse navbar-collapse" id="content">
+			 <ul id="nav-ul" class="navbar-nav">
+			 </ul>
+		 </div>
+	 </nav>
+	 <div class="container">
+		<div class="mt-5 bg_color">
+
+			<h2 class="font_color">登陆</h2>
+			<input type="text" placeholder="用户名" class="font_color bg_input w-25 border-0 p-3" id="uname" onfocus="unameFocus()" onblur="unameBlur()">
+            <span id="s1" class="text-danger"></span><br>
+            <input type="password" placeholder="密码" class="bg_input w-25 border-0 mt-1 p-3" id="upwd" onfocus="upwdFocus()" onblur="upwdBlur()">
+            <span id="s2" class="text-danger"></span>
+            <br>
+            <input type="button" value="登陆" class="btn btn-secondary" id="btn">
+            <a href="register.html" class="btn btn-secondary">注册</a>
+        </div>
+     </div>
+     <script src="js/jquery-3.2.1.js"></script>
+     <script src="js/login.js"></script>
+     <script>
+    <!--login原始方法-->
+	  /*function sendUname(){
+	    var xhr=createXhr();
+	    //console.log(xhr);
+	    xhr.onreadystatechange=function () {
+			if(xhr.readyState==4&&xhr.status==200){
+			    var res =xhr.responseText;
+			    if(res=="1"){
+			        alert("登录成功，正在跳转主页！");
+                    var str="location.href='http://127.0.0.1:3000/index.html'";
+                    eval(str);
+				}
+				else{
+			        alert("用户名不存在或密码不正确！");
+				}
+			}
+        }
+	    xhr.open("post","/user/login",true);
+	    xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+	    var user_name=$("uname").value;
+	    var user_upwd=$("upwd").value;
+	    var sendMsg="uname="+user_name+"&upwd="+user_upwd;
+	    xhr.send(sendMsg);
+	  }
+	<!--获取焦点函数-->
+		function unameFocus(){
+        	$("s1").innerHTML="请输入用户名！";
+	}
+		function upwdFocus(){
+        	$("s2").innerHTML="请输入密码！";
+		}
+	<!--失去焦点函数-->
+		function unameBlur(){
+			if($("uname").value==""){
+				$("s1").innerHTML="用户名不能为空！";
+			}else{
+			    $("s1").innerHTML="通过！"
+			}
+		}
+		function upwdBlur(){
+            if($("uname").value==""){
+                $("s2").innerHTML="密码不能为空！";
+            }else{
+                $("s2").innerHTML="";
+			}
+		}*/
+	</script>
+ <!-------------------footer----------------->
+ <footer>
+	 <div id="warp-footer">
+		 Copyright&nbsp&copy;&nbsp;2018&nbsp;By&nbsp;Mr&nbsp;LiuLu
+	 </div>
+ </footer>
+ </body>
+</html>
